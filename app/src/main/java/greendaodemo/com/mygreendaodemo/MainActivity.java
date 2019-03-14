@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<Student> stss=queryData("男");
 
-        addStudent();
+//        addStudent();
         List<Student> sss=queryAllList();
 
         List<Student> stsss=queryListByMessage("男");

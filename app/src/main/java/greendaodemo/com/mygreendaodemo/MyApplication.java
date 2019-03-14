@@ -17,10 +17,12 @@ public class MyApplication extends Application{
      * 初始化GreenDao,直接在Application中进行初始化操作
      */
     private void initGreenDao() {
-        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, "daodemo.db");
+//        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, "daodemo.db");
+        MyDaoMaster helper = new MyDaoMaster(this, "daodemo.db");
         SQLiteDatabase db = helper.getWritableDatabase();
         DaoMaster daoMaster = new DaoMaster(db);
         daoSession = daoMaster.newSession();
+
     }
 
     private DaoSession daoSession;

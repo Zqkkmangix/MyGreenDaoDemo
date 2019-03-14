@@ -19,7 +19,7 @@ android {
     }
 
     greendao {
-        schemaVersion 2 //数据库版本号
+        schemaVersion 8 //数据库版本号
         daoPackage 'greendaodemo.com.mygreendaodemo.gen'// 设置DaoMaster、DaoSession、Dao 包名
 //        incremental = false
         targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
